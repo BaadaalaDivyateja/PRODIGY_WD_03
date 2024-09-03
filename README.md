@@ -28,3 +28,15 @@ This project is part of my Web Development Internship at Prodigy InfoTech. The t
 1. Clone the repository:
    ```bash
    git clone https://github.com/BaadaalaDivyatjea/PRODIGY_WD_03.git
+2. Open index.html in your browser.
+
+# What I Learned
+Building interactive UIs with advanced HTML, CSS, and JavaScript.
+Implementing game logic with AI for different levels of difficulty.
+Creating responsive and visually appealing web designs.
+Managing game state and user interactions.
+
+# Future Enhancements
+Add more difficulty levels for the bot.
+Enhance UI with additional animations and sound effects.
+Implement multiplayer mode over a network.
