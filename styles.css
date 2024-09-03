@@ -1,0 +1,181 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('path_to_image.png') no-repeat center center fixed; /* Replace 'background.jpg' with your background image file path */
+    background-size: cover;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    backdrop-filter: blur(30px); /* Slight blur effect to make the content stand out against the background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.mode-switch {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.mode-switch label {
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+#modeSwitch {
+    margin: 0 10px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    background: rgba(40, 44, 52, 0.9);
+    transition: background 0.3s ease;
+    border-radius: 10px;
+}
+
+.cell:hover {
+    background: rgba(60, 64, 73, 0.9);
+}
+
+.cell.winning {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        background-color: #ff4c4c;
+    }
+    to {
+        background-color: #e33e3e;
+    }
+}
+
+.scoreboard {
+    margin-top: 20px;
+}
+
+.scoreboard table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.scoreboard th, .scoreboard td {
+    padding: 10px;
+    border: 1px solid #444;
+}
+
+.scoreboard th {
+    background: #333;
+}
+
+#resetBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff4c4c;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#resetBtn:hover {
+    background: #e33e3e;
+}
+/* Container styles */
+.container {
+    position: relative;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animated border */
+.container::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5, #1dd1a1);
+    z-index: -1;
+    filter: blur(15px);
+    opacity: 0.7;
+    animation: borderAnimation 10s infinite linear;
+}
+
+/* Gradient background animation */
+@keyframes borderAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Glassmorphism with glowing shadow effect */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* Cell hover effect */
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #333;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cell:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Adding background image */
+body {
+    background: url('path_to_image.png') no-repeat center center fixed;
+    background-size: cover;
+}
