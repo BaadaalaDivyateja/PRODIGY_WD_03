@@ -1,4 +1,4 @@
-# PRODIGY_WD_02 - Advanced Tic-Tac-Toe Web Application
+# PRODIGY_WD_03 - Advanced Tic-Tac-Toe Web Application
 
 ## Description
 
